@@ -3,7 +3,7 @@ name: Run Selenium Tests
 on:
   workflow_dispatch:    # Manual trigger
   schedule:
-    - cron: '0 0 * * *'  # Nightly trigger at midnight UTC (change as needed)
+    - cron: '0 0 * * *'  # Nightly trigger at midnight UTC 
 
 jobs:
   test:
