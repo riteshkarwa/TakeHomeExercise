@@ -13,6 +13,7 @@ from selenium.webdriver.common.by import By
 def test_google_finance(data):
     option = webdriver.ChromeOptions()
     option.add_argument("start-maximized")
+    option.add_argument("--headless")
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),options=option)
     driver.get("https://www.google.com/finance/")
     assert "Google Finance - Stock Market Prices, Real-time Quotes & Business News" == driver.title
