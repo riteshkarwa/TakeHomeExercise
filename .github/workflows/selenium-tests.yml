@@ -9,10 +9,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        browser: [chrome] 
-
     steps:
       # Step 1: Checkout the code
       - name: Checkout repository
