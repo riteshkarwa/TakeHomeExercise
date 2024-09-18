@@ -12,7 +12,7 @@ from selenium.webdriver.common.by import By
 @pytest.mark.parametrize("data", [["NFLX","MSFT", "TSLA"]])
 def test_google_finance(data):
     option = webdriver.ChromeOptions()
-    option.add_argument("--headless")
+    option.add_argument("start-maximized")
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),options=option)
     driver.get("https://www.google.com/finance/")
     assert "Google Finance - Stock Market Prices, Real-time Quotes & Business News" == driver.title
