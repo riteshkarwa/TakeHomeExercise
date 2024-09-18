@@ -33,4 +33,5 @@ jobs:
       # Step 5: Run the Selenium tests
       - name: Run Selenium Tests 
         run: |
-          pytest -vs
+          mkdir -p reports   
+          pytest -vs --html=reports/reports.html
