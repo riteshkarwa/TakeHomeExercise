@@ -37,12 +37,8 @@ jobs:
           pytest -vs --html=reports/reports.html
           chmod 777  /home/runner/work/TakeHomeExercise/TakeHomeExercise/reports/
       
-      - name: Set output
-        id: results
-        run: echo "artifactPath=tests/reports/" >> $GITHUB_OUTPUT
-
       # Step : Make report available in artifacts
       - uses: actions/upload-artifact@v3
         with:
           name: test-report
-          path: ${{ steps.results.outputs.artifactPath }}
+          path: output/reports/reports.html
