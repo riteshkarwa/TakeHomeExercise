@@ -43,4 +43,4 @@ jobs:
       # Step 5: Run the Selenium tests
       - name: Run Selenium Tests 
         run: |
-          pytest
+          pytest -vs
