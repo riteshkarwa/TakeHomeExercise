@@ -41,6 +41,6 @@ jobs:
           sudo chmod +x /usr/local/bin/chromedriver
 
       # Step 5: Run the Selenium tests
-      - name: Run Selenium Tests on ${{ matrix.browser }}
+      - name: Run Selenium Tests 
         run: |
           pytest
