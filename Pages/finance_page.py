@@ -33,3 +33,4 @@ class FinancePage:
         for i in data:
             if i not in stock_symbol_from_site:
                 print(i, end=',')
+        print("\n")
