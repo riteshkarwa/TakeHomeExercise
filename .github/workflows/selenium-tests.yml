@@ -29,8 +29,6 @@ jobs:
       # Step 4: Install Chrome
       - name: Install chrome  
         uses: browser-actions/setup-chrome@v1
-        run: | 
-          chrome --version
       
       # Step 5: Run the Selenium tests
       - name: Run Selenium Tests 
